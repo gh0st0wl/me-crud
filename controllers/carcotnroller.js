@@ -62,7 +62,7 @@ const createCar = async (req, res) => {
     }
 
     const car = await Car.create({ name, model, year });
-    return res.status(201).json(car); // ⚠️ 201 önemli
+    return res.status(201).json(car); 
   } catch (err) {
     return res.status(500).json({ message: "Sunucu hatası" });
   }
